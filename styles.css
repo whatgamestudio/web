@@ -1,0 +1,173 @@
+/* Estilos globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
+.imagen-seccion, img {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilo para los párrafos */
+p1 {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    line-height: 1.6; /* Aumenta el espacio entre líneas */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    padding: 13px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+/* Estilos para los títulos */
+h1, h4 {
+    color: #5cec61;
+    touch-action: pan-x;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+h4 {
+    text-shadow: 2px 2px 4px darkred;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #444;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4400; /* Color al pasar el ratón */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+}
+
+/* Estilos para la sección hero */
+.btn-cv {
+    
+    text-align: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Estilos para la cuadrícula de juegos */
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para cada juego */
+.game-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.btn-regresar {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.btn-regresar:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    text-align: center; /* Centra el texto en el body */
+}
+
+header, nav, section {
+    margin: 0 auto; /* Centra el contenedor */
+    width: 80%; /* Puedes ajustar el ancho según sea necesario */
+}
+
+.nav-link {
+    display: inline-block; /* Asegúrate de que los enlaces de navegación se alineen en línea */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+}
+
+.imagen-seccion, .imagen-juego, .imagen-servicio, .imagen-perfil {
+    display: block; /* Asegúrate de que las imágenes se comporten como bloques */
+    margin: 0 auto; /* Centra las imágenes */
+    
+}
+.imagen-perfil{
+    height: 150px;
+    width: 150px;
+}
+
+.miembro-container {
+    display: flex;
+    justify-content: center; /* Centra los miembros en el contenedor */
+    flex-wrap: wrap; /* Permite que los miembros se ajusten a varias líneas si es necesario */
+}
+
+.juego, .servicio-item {
+    margin: 20px; /* Espaciado entre juegos y servicios */
+    text-align: center; /* Centra el texto dentro de cada juego y servicio */
+}
+.link-maps {
+    border: 3px solid darkslategrey;
+    border-radius: 15px;
+    background-color: goldenrod;
+    color: black;
+}
