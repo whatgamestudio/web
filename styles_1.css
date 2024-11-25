@@ -1,0 +1,245 @@
+/* Estilos globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    background-image: url('https://i.pinimg.com/736x/8f/80/2b/8f802b67b959b794a2d4fafc9451438c.jpg');
+    color: #f4f4f4;
+    text-align: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.68); /* Color negro con 50% de opacidad */
+    z-index: 1; /* Asegúrate de que esté detrás del contenido */
+}
+
+.section-content {
+    position: relative; /* Necesario para que el contenido esté sobre el pseudo-elemento */
+    z-index: 2; /* Asegúrate de que el contenido esté por encima del fondo */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-image: url('https://userscontent2.emaze.com/images/b8ab643a-ce74-49fe-b9b0-6b061af21a03/b0fbbd7e126893cecbd55c95fcbea0c9.jpg');
+    color: white; 
+    padding: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+/* Estilos para las imágenes */
+.imagen-seccion, img {
+    width: 100%; /* Cambiado a 100% para ser responsivo */
+    max-width: 400px; /* Limita el ancho máximo */
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilo para los párrafos */
+p1 {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 1rem; /* Tamaño de fuente relativo */
+    line-height: 1.6; /* Aumenta el espacio entre líneas */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    padding: 13px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco sólido */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para los títulos */
+h1, h4 {
+    color: #5cec61;
+    touch-action: pan-x;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+h4, h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.section-content {
+    margin: 0 auto;
+    max-width: 1200px; /* Limitar el ancho máximo */
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4400; /* Color al pasar el ratón */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+}
+
+/* Estilos para la cuadrícula de juegos */
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para cada juego */
+.game-item {
+    display: inline-block; /* Permite que los elementos estén en línea */
+    width: 200px; /* Ancho fijo para los elementos de juego */
+    margin-right: 10px; /* Espaciado entre los elementos */
+    background-color: white; /* Fondo blanco para los elementos */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+.games-container {
+    max-width: 100%; /* O un ancho fijo como 800px */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan */
+    border: 1px solid #e74c3c; /* Opcional: borde para destacar la sección */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+/* Estilos para los botones */   
+.btn-navegar, .btn-regresar, .btn-cv {
+    background-color: #e74c3c; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado */
+    margin: 0 10px; /* Margen */
+    margin-top: 10px;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente relativo */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.btn-regresar:hover, .btn-navegar:hover, .btn-cv:hover {
+    background-color: #ff5733; /* Efecto hover */
+}
+
+.button-container {
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: rgb(133,144,158);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header, nav, section {
+    margin: 0 auto; /* Centra el contenedor */
+    width: 80%; 
+}
+
+.nav-link {
+    display: inline-block; 
+    margin: 0 15px; /* Espaciado entre los enlaces */
+}
+
+.imagen-seccion, .imagen-juego, .imagen-servicio, .imagen-perfil {
+    display: block; 
+    margin: 0 auto; /* Centra las imágenes */
+}
+
+.imagen-perfil {
+    height: 150px;
+    width: 150px;
+}
+
+.imagen-juego, .imagen-perfil, .imagen-servicio {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.imagen-juego:hover, .imagen-perfil:hover, .imagen-servicio:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse */
+}
+
+.miembro-container {
+    display: flex;
+    justify-content: center; /* Centra los miembros en el contenedor */
+    flex-wrap: wrap; /* Permite que los miembros se ajusten a varias líneas si es necesario */
+}
+
+.juego, .servicio-item {
+    margin: 20px; /* Espaciado entre juegos y servicios */
+    text-align: center; /* Centra el texto dentro de cada juego y servicio */
+}
+
+.link-maps {
+    border: auto solid darkslategrey;
+    border-radius: 13px;
+    background-color: goldenrod;
+    color: black;
+    position: relative;
+    z-index: 3;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    header, nav, section {
+        width: 90%; /* Ancho más pequeño en pantallas pequeñas */
+    }
+
+    .button-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los botones */
+    }
+
+    .imagen-seccion, img {
+        width: 100%; /* Imágenes ocupan el 100% del ancho en pantallas pequeñas */
+        max-width: none; /* Elimina el límite de ancho máximo */
+    }
+
+    .nav a {
+        margin: 5px 0; /* Espaciado vertical en enlaces de navegación */
+    }
+}

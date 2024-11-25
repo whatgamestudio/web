@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_1.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhatGame Studio</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1> 🎮WhatGame Studio©</h1>
+        <h4 style="color: white;"><i> Desarrollamos videojuegos innovadores y emocionantes</i></h4>
+    </header>
+
+    
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <a href="#splash-screen" class="nav-link"> Inicio </a>
+            <a href="#sobre-nosotros" class="nav-link"> Sobre Nosotros </a>
+            <a href="#juegos" class="nav-link"> Juegos </a>
+            <a href="#servicios" class="nav-link"> Servicios </a>
+            <a href="#contacto" class="nav-link"> Contacto </a>
+        </ul>
+    </nav>
+
+
+     <!-- Sección de Inicio -->
+        <section id="splash-screen" class="screen section-content">
+            <div class="inicio">
+                <h2> Bienvenido 😊!!! </h2>
+                <br>
+                <p> <strong>"Jugando fuera de los límites, creando dentro del corazón."</strong></p>
+                <img src="https://www.logoai.com/uploads/output/2021/10/23/272aa62a00b3fbb5b392483785572830.jpg?t=1634975293" alt="logo" class="imagen-seccion">
+                <p>En WhatGameStudio creamos videojuegos indie que combinan narrativa profunda, mundos vibrantes y personajes únicos. Nos impulsa la pasión por diseñar experiencias inolvidables y auténticas para jugadores de todo el mundo..</p>
+            </div>
+            <button class="btn-navegar" onclick="goToSection('sobre-nosotros')">→</button>
+        </section>       
+    
+    
+    
+    
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="screen section-content">
+        <h2>🏢 Sobre Nosotros 🏢</h2>
+        <img src="https://factoryfy.es/wp-content/uploads/dise%C3%B1o-logotipo-empresa-videojuegos.jpg" alt="Nuestro equipo" class="imagen-seccion">
+        <p> <strong>Somos una empresa apasionada por el desarrollo de videojuegos innovadores y emocionantes. </strong ></p>
+        
+        <div class="miembro-container">
+            <div class="miembro">
+                <h4> Miembro Fundador </h4>
+                <img src="https://img.freepik.com/vetores-premium/desenho-de-personagem-masculino-em-estilo-pixel-para-projeto-nft_200647-112.jpg" class="imagen-perfil">
+                <h4 style="color: white;">- Leonardo Sanchez – Director de Desarrollo - </h4>
+                <button class="btn-cv" onclick="mostrarCV('leo-cv')">Ver Currículum</button>
+            </div>
+            <div class="miembro">
+                <h4> Miembro Fundadora </h4>
+                <img src="https://img.freepik.com/vector-premium/retrato-humano-8-bits-pixeles-chica-joven-dibujos-animados-activos-juego-ilustracion-vectorial_614713-1541.jpg?w=360" class="imagen-perfil">
+                <h4 style="color: white;">- Ana Karen Perez – Diseñadora Gráfica en jefe -</h4>
+                <button class="btn-cv" onclick="mostrarCV('ana-cv')">Ver Currículum</button>
+            </div>
+            <div class="miembro">
+                <h4> Miembro Fundador </h4>
+                <img src="https://img.freepik.com/vector-premium/retrato-humano-8-bits-pixeles-hombre-dibujos-animados-activos-juego-ilustracion-vectorial_614713-1531.jpg" class="imagen-perfil">
+                <h4 style="color: white;">- Jeremy Reyes – Desarrollador de Software -</h4>
+                <button class="btn-cv" onclick="mostrarCV('jere-cv')">Ver Currículum</button>
+            </div>
+        </div>
+        <button class="btn-navegar" onclick="goToSection('splash-screen')">←</button>
+        <button class="btn-regresar" onclick="goToSplash()">Regresar al Inicio</button>
+        <button class="btn-navegar" onclick="goToSection('juegos')">→</button>
+    </section>
+
+
+     <!-- Sección de Currículums -->
+    <div id="curriculum-screen" class="screen section-content">
+        <h2>👨‍💻 Currículum de Nuestro Equipo 👨‍💻</h2>
+        <div class="curriculum" id="leo-cv" style="display: none;">
+            <h3 style="color: white;">Currículum de Leonardo sanchez</h3>
+            <img src="https://s3.ppllstatics.com/elcorreo/www/multimedia/2023/04/20/blasphemous-kEMH-U200106343260vaH-1200x840@ElCorreo.jpg" class="imagen-perfil">
+            <p>Educación: Licenciado en Diseño y Desarrollo de Videojuegos por la Universidad Autónoma Nacional de Mexico, con una maestria en Gestión de Proyectos en la Industria de Videojuegos de la misma universidad.</p>
+            <p>Experiencia: Con más de 12 años de experiencia en el sector, comenzó su carrera en Ubisoft, donde rápidamente se destacó y asumió el rol de líder de equipo en varios proyectos AAA. Leonardo ha sido fundamental en la coordinación de equipos multidisciplinarios, asegurando que cada aspecto del desarrollo – desde la concepción de ideas hasta la fase final de lanzamiento – se realice sin problemas. Su trabajo ha sido elogiado por su capacidad para optimizar tiempos de producción sin sacrificar la creatividad, manteniendo siempre una visión estratégica y orientada a objetivos.</p>
+            <p>Características: Leonardo es una líder nato, con una gran habilidad para inspirar a su equipo. Es innovador, rápido en la toma de decisiones y resolutivo frente a problemas complejos de diseño. Su enfoque es equilibrado, combinando creatividad con precisión técnica, y su capacidad de comunicación la convierte en una mediadora eficaz entre el equipo creativo y los objetivos comerciales del proyecto.</p>
+            <br>
+            <button class="btn-regresar" onclick="goToSplash()">Regresar al Inicio</button>
+            <button class="btn-navegar" onclick="mostrarCV('ana-cv')">→</button>
+        </div>
+        <div class="curriculum" id="ana-cv" style="display: none;">
+            <h3 style="color: white;">Currículum de Ana Karen Perez</h3>
+            <img src="https://img.freepik.com/vector-premium/retrato-humano-8-bits-pixeles-chica-joven-dibujos-animados-activos-juego-ilustracion-vectorial_614713-1541.jpg?w=360" class="imagen-perfil">
+            <p>Educación: Licenciada en Artes Digitales por la Universidad Nacional Autonoma de Mexico, con especialización en diseño de personajes y entornos visuales. Además, ha realizado estudios de postgrado en Arte Digital para Videojuegos en la École des Beaux-Arts de París.</p>
+            <p>Experiencia: Con una década de experiencia en diseño visual, Ana ha trabajado en empresas como Electronic Arts, donde su trabajo ha sido crucial para el desarrollo de identidades visuales en juegos de deportes, aventuras y acción. Se ha encargado de la creación de personajes, ambientes y objetos que reflejan no solo la estética del juego, sino también la historia y la inmersión deseada. Ana ha liderado equipos de artistas en la implementación de gráficos que mantienen la coherencia estilística y se adaptan a las últimas tendencias de la industria.</p>
+            <p>Características: Ana tiene un ojo excepcional para el detalle y una habilidad innata para trabajar en equipo. Su conocimiento de software de diseño 3D como Blender y ZBrush, sumado a su creatividad, la hace capaz de construir mundos virtuales realistas y cautivadores. Es apasionada y siempre busca superar las expectativas visuales del proyecto, integrando estética y funcionalidad de manera impecable.</p>
+            <button class="btn-navegar" onclick="mostrarCV('leo-cv')">←</button>
+            <button class="btn-regresar" onclick="goToSplash()">Regresar al Inicio</button>
+            <button class="btn-navegar" onclick="mostrarCV('jere-cv')">→</button>
+        </div>
+
+        <div class="curriculum" id="jere-cv" style="display: none;">
+            <h3 style="color: white;">Currículum de Jeremy Reyes</h3>
+            <img src="https://img.freepik.com/vector-premium/retrato-humano-8-bits-pixeles-hombre-dibujos-animados-activos-juego-ilustracion-vectorial_614713-1531.jpg" class="imagen-perfil">
+            <p>Educación: Ingeniero en Computación por la Instituto Politecnico Nacional, con especialización en desarrollo de videojuegos y sistemas interactivos. Además, tiene un máster en Inteligencia Artificial aplicada al Entretenimiento Digital por la Universidad de Edimburgo.</p>
+            <p>Experiencia: Con más de 15 años de experiencia, Jeremy ha trabajado en compañías como Activision y Capcom, donde se ha especializado en programación de motores de juego y sistemas de inteligencia artificial. Su rol como programador en estos estudios la ha llevado a desarrollar técnicas avanzadas para mejorar la experiencia del usuario, optimizar el rendimiento del código y asegurar que los personajes virtuales tengan comportamientos realistas y responsivos. Es un líder técnico en optimización de motores de juegos y ha creado herramientas internas para simplificar procesos y mejorar la eficiencia del equipo de programación.</p>
+            <p>Características: Jeremy es meticuloso, con una sólida base en C++, Python y JavaScript. Es excelente para anticipar problemas técnicos y optimizar procesos, además de ser una persona organizada y orientada a resultados. Su habilidad para crear códigos limpios y eficientes la ha convertido en una experta en integración de IA en videojuegos, transformando su conocimiento técnico en una herramienta clave para el desarrollo de proyectos exitosos.</p>
+            <button class="btn-navegar" onclick="mostrarCV('ana-cv')">←</button>
+            <button class="btn-regresar" onclick="goToSplash()">Regresar al Inicio</button>
+        </div>
+    </div>
+
+
+    <!-- Sección Juegos -->
+<section id="juegos" class="screen section-content">
+    <h2> 🎮 Descubre los Mejores Videojuegos 🎮</h2>
+
+    
+    <div class="juegos-container" style="display: flex; overflow-x: auto; gap: 20px;">
+        
+        <div class="juego">
+
+            <a href="https://poki.com/es/g/gladihoppers" target="_blank">
+            <img src="https://media.rawg.io/media/resize/1280/-/screenshots/f5e/f5ef450e006a34ea704a6737590e6208.jpg" alt="Battle Quest" class="imagen-juego">
+            <h3>Battle Quest</h3>
+            </a>
+            <p>Un RPG de acción en un mundo de fantasía donde los jugadores enfrentan épicas batallas estratégicas.</p>
+        </div>
+
+        <div class="juego">
+            <a href="https://poki.com/es/g/space-major-miner" target="_blank">   
+            <img src="https://cdn.mos.cms.futurecdn.net/ACdzWZfdLaDdriwcnprmUV.jpg" alt="Space Explorer" class="imagen-juego">
+            <h3>Space Explorer</h3>
+            </a>
+            <p>Un juego de exploración espacial en el que los jugadores descubren galaxias y civilizaciones alienígenas.</p>
+        </div>
+
+        <div class="juego">
+            <a href="https://poki.com/es/g/magicland-io" target="_blank">
+            <img src="https://www.apparatgaming.com/wp-content/uploads/2023/10/Apparat_MysticForest-1400x800-1.png" alt="Mystic Forest" class="imagen-juego">
+            <h3>Mystic Forest</h3>
+            </a>
+            <p>Un juego de aventuras en un bosque encantado, donde los jugadores deben resolver acertijos y enfrentar criaturas mágicas.</p>
+        </div>
+
+        <div class="juego">
+            <a href="https://poki.com/es/g/city-car-driving-stunt-master" target="_blank">
+            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000082233/42fbfaa68f75e7a8c932d166fede59df647af28f18fd610fa44598093ae74d93" alt="Cyber Racers" class="imagen-juego">
+            <h3>Cyber Racers</h3>
+            </a>
+            <p>Un juego de carreras futuristas con vehículos de alta velocidad a través de ciudades cibernéticas llenas de luces de neón.</p>
+        </div>
+    </div>
+        <button class="btn-navegar" onclick="goToSection('sobre-nosotros')">←</button>
+        <button class="btn-regresar" onclick="goToSplash()">  Regresar al Inicio</button>
+        <button class="btn-navegar" onclick="goToSection('servicios')">→</button>
+</section>
+
+
+  
+    <!-- Sección Servicios -->
+    <section id="servicios" class="screen section-content">
+    <h2>✨ Servicios ✨</h2>
+    <p> <strong>Ofrecemos una amplia gama de servicios de desarrollo de videojuegos que cubren desde la concepción hasta la producción final. Descubre lo que podemos hacer: </strong></p>
+    
+    <div class="galeria-servicios" style="display: flex; overflow-x: auto; gap: 20px;">
+        <div class="servicio-item">
+            <img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2014/07/desarrollador.jpg?fit=960%2C540&ssl=1" alt="Desarrollo de Videojuegos" class="imagen-servicio">
+            <h3>🔴Desarrollo de Videojuegos</h3>
+            <p>Diseñamos y desarrollamos videojuegos para PC, consolas y móviles.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="https://online.anahuac.mx/images/d_desarrollo_videojuegos_anahuac_online_thumb_1200w.jpg" alt="Consultoría en Diseño" class="imagen-servicio">
+            <h3>🔴Consultoría en Diseño</h3>
+            <p>Ofrecemos consultoría en el diseño de mecánicas y jugabilidad.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="https://educacioncontinua.fad.unam.mx/wp-content/uploads/2021/05/nueva-ilustracion-animada.jpg" alt="Arte y Animación 3D" class="imagen-servicio">
+            <h3>🔴Arte y Animación 3D</h3>
+            <p>Nos especializamos en la creación de arte digital y animaciones para juegos.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="https://i2.wp.com/algomasquetraducir.com/wp-content/uploads/2013/05/051313_1202_Testingdevi1.jpg?w=740" alt="Optimización y Testing" class="imagen-servicio">
+            <h3>🔴Optimización y Testing</h3>
+            <p>Garantizamos un rendimiento óptimo a través de pruebas y optimización.</p>
+        </div>
+    </div>
+    <button class="btn-navegar" onclick="goToSection('juegos')">←</button>
+    <button class="btn-regresar" onclick="goToSplash()">Regresar al Inicio</button>
+    <button class="btn-navegar" onclick="goToSection('contacto')">→</button>
+</section>
+
+
+<!-- Sección Contacto -->
+<section id="contacto" class="screen section-content">
+    <h2>📞 Contacto 📞</h2>
+    <img src="https://img.freepik.com/vector-premium/representante-profesional-servicio-al-cliente-chica-auriculares-responde-preguntas-247_1324816-8451.jpg?semt=ais_hybrid" alt="Contactanos" class="imagen-servicio">
+    <p> <strong>Si tienes alguna pregunta o deseas contactarnos, no dudes en utilizar la información a continuación:</strong></p>
+
+    <div class="info-contacto">
+        <h3>Teléfono:</h3>
+        <p1> 📱 (555) 123-4567</p1>
+
+        <h3>Correo Electrónico:</h3>
+        <p1>📧 contacto@WhatGameStudio.com</p1>
+
+        <h3>Dirección:</h3>
+        <p1>📍 WhatGameStudio, 622 Broadway, New York, NY 10012<br></p1>
+        <br>
+        <a href="https://www.google.com/maps/place/622+Broadway,+New+York,+NY+10012" target="_blank" class="link-maps">🌎 Ver en Google Maps</a>
+    </div>
+
+    <button class="btn-navegar" onclick="goToSection('servicios')">←</button>
+    <button class="btn-regresar" onclick="goToSplash()">Regresar al Inicio</button>
+    
+</section>
+
+    <script>
+
+        function goToSection(sectionId) {
+            const sections = document.querySelectorAll('.screen');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+        // Ocultar todas las secciones excepto la pantalla principal
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.screen');
+            sections.forEach(section => {
+                if (section.id !== 'splash-screen') {
+                    section.style.display = 'none';
+                }
+            });
+
+            // Navegar a cada sección al hacer clic en los enlaces de la pantalla principal
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    sections.forEach(section => {
+                        if (section.id === targetId.substring(1)) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Función para regresar a la pantalla principal
+        function goToSplash() {
+            const sections = document.querySelectorAll('.screen');
+            sections.forEach(section => {
+                if (section.id === 'splash-screen') {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+        // Función para mostrar el currículum de cada miembro
+        function mostrarCV(miembroId) {
+            document.querySelectorAll('.screen').forEach(section => section.style.display = 'none');
+            document.getElementById('curriculum-screen').style.display = 'block';
+            
+            document.querySelectorAll('.curriculum').forEach(curriculum => curriculum.style.display = 'none');
+            document.getElementById(miembroId).style.display = 'block';
+        }
+
+        // Función para regresar a la pantalla principal
+        function ocultarCV() {
+            document.querySelectorAll('.screen').forEach(section => section.style.display = 'none');
+            document.getElementById('splash-screen').style.display = 'block';
+        }
+    </script>
+
+    </body>
+</html>
